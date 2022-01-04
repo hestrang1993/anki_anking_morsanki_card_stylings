@@ -1,0 +1,41 @@
+<body>
+    <div class="accordion" id="morsanki-accordion">
+
+        <!--Text-->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="text-heading">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#text-panel"
+                    aria-expanded="true" aria-controls="text-panel">
+                    Text
+                </button>
+            </h2>
+            <div id="text-panel" class="accordion-collapse collapse show" aria-labelledby="text-heading">
+                <div class="accordion-body">
+                    <p class="card-text cloze_container">
+                        {{left_bracket}}Text{{right_bracket}}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        {% for field_title, field in fields_dict.items() %}
+        <!--{{field_title}}-->
+        {{left_bracket}}#{{field_title}}{{right_bracket}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="{{field}}-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#{{field}}-panel" aria-expanded="false" aria-controls="{{field}}-panel">
+                    {{field_title}}
+                </button>
+            </h2>
+            <div id="{{field}}-panel" class="accordion-collapse collapse" aria-labelledby="{{field}}-heading">
+                <div class="accordion-body hint-field">
+                    {{left_bracket}}{{field_title}}{{right_bracket}}
+                </div>
+            </div>
+        </div>
+        {{left_bracket}}/{{field_title}}{{right_bracket}}
+        {% endfor %}
+    </div>
+    <script type="module" src="bootstrap.js"></script>
+</body>
