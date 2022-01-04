@@ -1,0 +1,289 @@
+<!-- EDIT CLOZE DURING REVIEW-change below to  "edit:cloze:Text" for editable field, but be sure to have the correct add-on installed-->
+
+<body>
+    <div class="accordion" id="morsanki-accordion">
+
+        <!--Text-->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="text-heading">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#text-panel"
+                    aria-expanded="true" aria-controls="text-panel">
+                    Text
+                </button>
+            </h2>
+            <div id="text-panel" class="accordion-collapse collapse show" aria-labelledby="text-heading">
+                <div class="accordion-body">
+                    <p class="card-text cloze_container">
+                        {{cloze:Text}}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Lecture Notes-->
+        {{#Lecture Notes}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="lecture-notes-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#lecture-notes-panel" aria-expanded="false" aria-controls="lecture-notes-panel">
+                    Lecture Notes
+                </button>
+            </h2>
+            <div id="lecture-notes-panel" class="accordion-collapse collapse" aria-labelledby="lecture-notes-heading">
+                <div class="accordion-body hint-field">
+                    {{Lecture Notes}}
+                </div>
+            </div>
+        </div>
+        {{/Lecture Notes}}
+
+        <!--Extra-->
+        {{#Extra}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="extra-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#extra-panel" aria-expanded="false" aria-controls="extra-panel">
+                    Extra
+                </button>
+            </h2>
+            <div id="extra-panel" class="accordion-collapse collapse" aria-labelledby="extra-heading">
+                <div class="accordion-body hint-field">
+                    {{Extra}}
+                </div>
+            </div>
+        </div>
+        {{/Extra}}
+
+        <!--First Aid-->
+        {{#First Aid}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="first-aid-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#first-aid-panel" aria-expanded="false" aria-controls="first-aid-panel">
+                    First Aid
+                </button>
+            </h2>
+            <div id="first-aid-panel" class="accordion-collapse collapse" aria-labelledby="first-aid-heading">
+                <div class="accordion-body hint-field">
+                    {{First Aid}}
+                </div>
+            </div>
+        </div>
+        {{/First Aid}}
+
+        <!--Boards and Beyond-->
+        {{#Boards and Beyond}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="boards-and-beyond-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#boards-and-beyond-panel" aria-expanded="false"
+                    aria-controls="boards-and-beyond-panel">
+                    Boards and Beyond
+                </button>
+            </h2>
+            <div id="boards-and-beyond-panel" class="accordion-collapse collapse"
+                aria-labelledby="boards-and-beyond-heading">
+                <div class="accordion-body hint-field">
+                    {{Boards and Beyond}}
+                </div>
+            </div>
+        </div>
+        {{/Boards and Beyond}}
+
+        <!--Pathoma-->
+        {{#Pathoma}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="pathoma-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#pathoma-panel" aria-expanded="false" aria-controls="pathoma-panel">
+                    Pathoma
+                </button>
+            </h2>
+            <div id="pathoma-panel" class="accordion-collapse collapse" aria-labelledby="pathoma-heading">
+                <div class="accordion-body hint-field">
+                    {{Pathoma}}
+                </div>
+            </div>
+        </div>
+        {{/Pathoma}}
+
+        <!--Draw It to Know It-->
+        {{#Draw It to Know It}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="draw-it-to-know-it-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#draw-it-to-know-it-panel" aria-expanded="false"
+                    aria-controls="draw-it-to-know-it-panel">
+                    Draw It to Know It
+                </button>
+            </h2>
+            <div id="draw-it-to-know-it-panel" class="accordion-collapse collapse"
+                aria-labelledby="draw-it-to-know-it-heading">
+                <div class="accordion-body hint-field">
+                    {{Draw It to Know It}}
+                </div>
+            </div>
+        </div>
+        {{/Draw It to Know It}}
+
+        <!--AMBOSS-->
+        {{#AMBOSS}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="amboss-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#amboss-panel" aria-expanded="false" aria-controls="amboss-panel">
+                    AMBOSS
+                </button>
+            </h2>
+            <div id="amboss-panel" class="accordion-collapse collapse" aria-labelledby="amboss-heading">
+                <div class="accordion-body hint-field">
+                    {{AMBOSS}}
+                </div>
+            </div>
+        </div>
+        {{/AMBOSS}}
+
+        <!--Osmosis-->
+        {{#Osmosis}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="osmosis-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#osmosis-panel" aria-expanded="false" aria-controls="osmosis-panel">
+                    Osmosis
+                </button>
+            </h2>
+            <div id="osmosis-panel" class="accordion-collapse collapse" aria-labelledby="osmosis-heading">
+                <div class="accordion-body hint-field">
+                    {{Osmosis}}
+                </div>
+            </div>
+        </div>
+        {{/Osmosis}}
+
+        <!--OnlineMedEd-->
+        {{#OnlineMedEd}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="onlinemeded-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#onlinemeded-panel" aria-expanded="false" aria-controls="onlinemeded-panel">
+                    OnlineMedEd
+                </button>
+            </h2>
+            <div id="onlinemeded-panel" class="accordion-collapse collapse" aria-labelledby="onlinemeded-heading">
+                <div class="accordion-body hint-field">
+                    {{OnlineMedEd}}
+                </div>
+            </div>
+        </div>
+        {{/OnlineMedEd}}
+
+        <!--Sketchy-->
+        {{#Sketchy}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="sketchy-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sketchy-panel" aria-expanded="false" aria-controls="sketchy-panel">
+                    Sketchy
+                </button>
+            </h2>
+            <div id="sketchy-panel" class="accordion-collapse collapse" aria-labelledby="sketchy-heading">
+                <div class="accordion-body hint-field">
+                    {{Sketchy}}
+                </div>
+            </div>
+        </div>
+        {{/Sketchy}}
+
+        <!--Pixorize-->
+        {{#Pixorize}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="pixorize-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#pixorize-panel" aria-expanded="false" aria-controls="pixorize-panel">
+                    Pixorize
+                </button>
+            </h2>
+            <div id="pixorize-panel" class="accordion-collapse collapse" aria-labelledby="pixorize-heading">
+                <div class="accordion-body hint-field">
+                    {{Pixorize}}
+                </div>
+            </div>
+        </div>
+        {{/Pixorize}}
+
+        <!--Missed Questions-->
+        {{#Missed Questions}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="missed-questions-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#missed-questions-panel" aria-expanded="false"
+                    aria-controls="missed-questions-panel">
+                    Missed Questions
+                </button>
+            </h2>
+            <div id="missed-questions-panel" class="accordion-collapse collapse"
+                aria-labelledby="missed-questions-heading">
+                <div class="accordion-body hint-field">
+                    {{Missed Questions}}
+                </div>
+            </div>
+        </div>
+        {{/Missed Questions}}
+
+        <!--Physeo-->
+        {{#Physeo}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="physeo-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#physeo-panel" aria-expanded="false" aria-controls="physeo-panel">
+                    Physeo
+                </button>
+            </h2>
+            <div id="physeo-panel" class="accordion-collapse collapse" aria-labelledby="physeo-heading">
+                <div class="accordion-body hint-field">
+                    {{Physeo}}
+                </div>
+            </div>
+        </div>
+        {{/Physeo}}
+
+        <!--Additional Resources-->
+        {{#Additional Resources}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="additional-resources-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#additional-resources-panel" aria-expanded="false"
+                    aria-controls="additional-resources-panel">
+                    Additional Resources
+                </button>
+            </h2>
+            <div id="additional-resources-panel" class="accordion-collapse collapse"
+                aria-labelledby="additional-resources-heading">
+                <div class="accordion-body hint-field">
+                    {{Additional Resources}}
+                </div>
+            </div>
+        </div>
+        {{/Additional Resources}}
+
+        <!--Tags-->
+        {{#Tags}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="tags-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#tags-panel" aria-expanded="false" aria-controls="tags-panel">
+                    Tags
+                </button>
+            </h2>
+            <div id="tags-panel" class="accordion-collapse collapse" aria-labelledby="tags-heading">
+                <div class="accordion-body hint-field">
+                    {{clickable:Tags}}
+                    <script type="module" src="_assets/_clickable_tags.js"></script>
+                </div>
+            </div>
+        </div>
+        {{/Tags}}
+    </div>
+    <script type="module" src="_assets/_bootstrap.js"></script>
+</body>
