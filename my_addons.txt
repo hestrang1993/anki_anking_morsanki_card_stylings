@@ -47,8 +47,5 @@
 882784122
 929609616
 965278890
-medical_calculations
-my_addon
-pythonProject
-pythonProject1
+medical_calculation
 review_heatmap
